@@ -23,8 +23,11 @@
   align-items: center;
   justify-content: space-around;
 }
-.category__filter--btn p {
-  font-size: 12px;
+.category__filter--btn input {
+  display: none;
+}
+.category__filter--btn label {
+  font-size: 16px;
   text-align: left;
   font-weight: 500;
   line-height: 18px;

@@ -1,10 +1,11 @@
 export const data = [
     {
         id: 1,
-        name: "Coffe Milk",
+        name: "Coffee Milk",
         desc: "Ice americano + fresh milk",
         price: 25,
         rating: 4.9,
+        filter: 'recommend',
         img: './assets/unsplash_L-sm1B4L1Ns.svg',
         prevPrice: 30,
     },
@@ -14,6 +15,7 @@ export const data = [
         desc: "Steamed milk with mocha and caramel sauces",
         price: 35,
         rating: 4.6,
+        filter: 'recommend',
         img: './assets/unsplash_L-sm1B4L1Ns.svg',
         prevPrice: 38
     },
@@ -32,15 +34,17 @@ export const data = [
         desc: "Espresso with mocha sauce, milk and whipped cream.",
         price: 29,
         rating: 4.7,
+        filter: 'recommend',
         img: './assets/unsplash_L-sm1B4L1Ns.svg',
         prevPrice: 33
     },
     {
-        id: 4,
+        id: 5,
         name: "Caramel Latte",
         desc: "Espresso, Fresh Milk and Caramel",
         price: 25,
         rating: 4.8,
+        filter: 'recommend',
         img: './assets/unsplash_L-sm1B4L1Ns.svg',
         prevPrice: 28
     }

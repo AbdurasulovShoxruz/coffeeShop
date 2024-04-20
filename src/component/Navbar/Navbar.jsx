@@ -2,14 +2,17 @@ import './Navbar.scss'
 import {Search, ShoppingCart} from 'lucide-react'
 import Swiper from '../SwiperComp/SwiperComp'
 import Category from '../Category/Category'
+import useFilter from '../../hooks/useFilter'
 
 
 const Navbar = () =>  {
+    const [inputData, inputHandler, filterData] = useFilter();
+
   return (
     <div className='navbar'>
         <div className="navbar__search">
             <div className="navbar__search--input">
-                <input type="text" placeholder='What would you like to drink today?'/>
+                <input name='search' onChange={inputHandler} type="text" placeholder='What would you like to drink today?'/>
                 <Search size={"24px"} color='rgb(202, 202, 202)' className='navbar__search--input--searchIcon' />
             </div>
             <div className='navbar__search--cart'></div>
