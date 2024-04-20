@@ -1,6 +1,7 @@
 import './Navbar.scss'
 import {Search, ShoppingCart} from 'lucide-react'
 import Swiper from '../SwiperComp/SwiperComp'
+import Category from '../Category/Category'
 
 
 const Navbar = () =>  {
@@ -18,7 +19,7 @@ const Navbar = () =>  {
                 <Swiper/>
             </div>
             <div className="navbar__filter">
-        <h2>filter</h2>
+        <Category/>
             </div>
     </div> 
   )

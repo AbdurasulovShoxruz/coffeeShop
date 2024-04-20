@@ -1,4 +1,8 @@
 .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   &__search {
     width: 100%;
     display: flex;
