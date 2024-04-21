@@ -1,15 +1,15 @@
 import "./Product.scss";
 import Star from "../../assets/Vector.svg";
-import useFilter from "../../hooks/useFilter";
+import useData from "../../hooks/useData";
 
 const Product = () => {
-  const [inputData, inputHandler, filterData] = useFilter();
+  const [cofeData] = useData()
 
   return (
     <div className="product">
       {
-        inputData.sortedData &&
-        inputData.sortedData.map((cofe) => (
+       cofeData &&
+        cofeData.map((cofe) => (
       <div key={cofe.id} className="product__cofe">
         <div className="product__cofe--image">
           <img className="cofeImg" src={ require('../../assets/unsplash_L-sm1B4L1Ns.svg').default} alt="" />

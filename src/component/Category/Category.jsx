@@ -3,7 +3,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { Filter, Star, BadgeDollarSign, BadgePercent } from "lucide-react";
 import "./Category.scss";
 import "swiper/css";
-import useFilter from "../../hooks/useFilter";
+
 
 const categoryBtns = [
   {
@@ -21,7 +21,7 @@ const categoryBtns = [
 ];
 
 const Category = () => {
-  const [inputData, inputHandler, filterData] = useFilter();
+
 
   return (
     <>
@@ -50,7 +50,7 @@ const Category = () => {
           <SwiperSlide className="category__filter--btn">
             {" "}
             <Star className="category__filter--btn--icon" />
-            <input id="btn" type="radio" name="filter" value='recommend' onChange={inputHandler}/>
+            <input id="btn" type="radio" name="filter" value='recommend' />
             <label htmlFor="btn">Rating</label>
           </SwiperSlide>
           <SwiperSlide className="category__filter--btn">
